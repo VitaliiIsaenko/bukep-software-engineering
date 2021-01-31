@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "38OtA9VpVNbGBo8c09sK6nr+t+eQyg0oYenvP7gBkxJ4CcmC2W70iLx7BAW0wfguar4Snr0l5wZ2vzhduYJTBQ==",
+  "dgSpecHash": "EnDREV9f3sgrVZCnc1bpoAwQeJ6odMg05ULBsBribOYlvna3Ix5zCa6R64cvqCnZnWUeYi2MSZp1DZ5iPQz86g==",
   "success": true,
   "projectFilePath": "/home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation.Helpers.Tests/CountriesRecommendation.Helpers.Tests.csproj",
   "expectedPackageFiles": [

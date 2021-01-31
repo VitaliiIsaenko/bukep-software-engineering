@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "CountriesRecommendation.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CountriesRecommendation.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CountriesRecommendation.Helpers.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CountriesRecommendation.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../CountriesRecommendation.Helpers/CountriesRecommendation.Helpers.csproj",
+      "msbuildProject": "../CountriesRecommendation.Helpers/CountriesRecommendation.Helpers.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "CountriesRecommendation.Helpers >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/vitalii/.nuget/packages/": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation.Helpers/CountriesRecommendation.Helpers.csproj": {
+              "projectPath": "/home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation.Helpers/CountriesRecommendation.Helpers.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

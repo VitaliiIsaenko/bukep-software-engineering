@@ -1,19 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace CountriesRecommendation.Helpers
 {
     public class CountriesCsvReader
     {
-        public List<Country> ReadCountries(string filePath)
+        public static Country[] ReadCountries(string fileName)
         {
-            return new List<Country>()
-            {
-                new Country()
-                {
-                    Name = "Венгрия"
-                }
-            };
+            var curr = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+            var filePath = $"{curr}/countries/{fileName}";
+            List<Country> countries = new List<Country>();
+            var lines = File.ReadAllLines(filePath).Skip(1).ToArray();
+            foreach(var line in lines) {
+                var fields = line.Split(",");
+                var country = new Country(fields[0], long.Parse(fields[1]), int.Parse(fields[2]), fields[3] == "да");
+                countries.Add(country);
+            }
+            return countries.ToArray();
         }
     }
 }

@@ -1,0 +1,65 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": []
+  },
+  "packageFolders": {
+    "/home/vitalii/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation/CountriesRecommendation.csproj",
+      "projectName": "CountriesRecommendation",
+      "projectPath": "/home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation/CountriesRecommendation.csproj",
+      "packagesPath": "/home/vitalii/.nuget/packages/",
+      "outputPath": "/home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/vitalii/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.innoloft.com": {},
+        "https://pkgs.dev.azure.com/pomelo-efcore/Pomelo.EntityFrameworkCore.MySql/_packaging/pomelo-efcore-public/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.405/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

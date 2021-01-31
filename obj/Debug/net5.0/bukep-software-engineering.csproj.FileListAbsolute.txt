@@ -1,0 +1,16 @@
+C:\Users\dtrsa\bukep-software-engineering\bin\Debug\net5.0\bukep-software-engineering.exe
+C:\Users\dtrsa\bukep-software-engineering\bin\Debug\net5.0\bukep-software-engineering.deps.json
+C:\Users\dtrsa\bukep-software-engineering\bin\Debug\net5.0\bukep-software-engineering.runtimeconfig.json
+C:\Users\dtrsa\bukep-software-engineering\bin\Debug\net5.0\bukep-software-engineering.runtimeconfig.dev.json
+C:\Users\dtrsa\bukep-software-engineering\bin\Debug\net5.0\bukep-software-engineering.dll
+C:\Users\dtrsa\bukep-software-engineering\bin\Debug\net5.0\ref\bukep-software-engineering.dll
+C:\Users\dtrsa\bukep-software-engineering\bin\Debug\net5.0\bukep-software-engineering.pdb
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\bukep-software-engineering.csprojAssemblyReference.cache
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\bukep-software-engineering.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\bukep-software-engineering.AssemblyInfoInputs.cache
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\bukep-software-engineering.AssemblyInfo.cs
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\bukep-software-engineering.csproj.CoreCompileInputs.cache
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\bukep-software-engineering.dll
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\ref\bukep-software-engineering.dll
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\bukep-software-engineering.pdb
+C:\Users\dtrsa\bukep-software-engineering\obj\Debug\net5.0\bukep-software-engineering.genruntimeconfig.cache

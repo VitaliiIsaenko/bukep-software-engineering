@@ -10,14 +10,21 @@ namespace CountriesRecommendation.Helpers
         {
             var curr = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
             var filePath = $"{curr}/countries/{fileName}";
-            List<Country> countries = new List<Country>();
+
+            Country[] countries = new Country[10];
+
             var lines = File.ReadAllLines(filePath).Skip(1).ToArray();
-            foreach(var line in lines) {
-                var fields = line.Split(",");
+
+            for(int i = 0; i < lines.Length; i++) {
+                
+                var fields = lines[i].Split(",");
+
                 var country = new Country(fields[0], long.Parse(fields[1]), int.Parse(fields[2]), fields[3] == "да");
-                countries.Add(country);
+
+                countries[i] = country;
+
             }
-            return countries.ToArray();
+            return countries;
         }
     }
 }

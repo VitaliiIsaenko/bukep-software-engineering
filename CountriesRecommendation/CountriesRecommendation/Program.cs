@@ -20,6 +20,10 @@ namespace CountriesRecommendation
             }
 
             Console.WriteLine(liveBySea);
+
+            // string[][] countriesAsStrings = 
+            // Country[] countries = new Country[10];
+            
         }
     }
 }

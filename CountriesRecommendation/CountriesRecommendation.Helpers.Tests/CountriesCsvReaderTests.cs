@@ -9,7 +9,7 @@ namespace CountriesRecommendation.Helpers.Tests
         public void ReadCountries()
         {
             var onlyForTest = "../../../../countries";
-            var countries = CountriesCsvReader.ReadCountries($"{onlyForTest}/Isaenko.csv");
+            var countries = CsvReader.Read($"{onlyForTest}/Isaenko.csv");
 
             Assert.Equal("Венгрия", countries[0][0]);
             Assert.Equal(9_769_526, long.Parse(countries[0][1]));

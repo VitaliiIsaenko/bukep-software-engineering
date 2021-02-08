@@ -10,8 +10,9 @@ namespace CountriesRecommendation.Helpers
         {
             var curr = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
             var filePath = $"{curr}/countries/{fileName}";
-            string[][] rows = new string[100][];
+            
             var lines = File.ReadAllLines(filePath).Skip(1).ToArray();
+            string[][] rows = new string[lines.Length][];
             for (int i = 0; i < lines.Length; i++)
             {
                 var fields = lines[i].Split(",");

@@ -20,6 +20,8 @@ namespace CountriesRecommendation
             }
 
             Console.WriteLine(liveBySea);
+
+            
         }
     }
 }

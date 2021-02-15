@@ -13,8 +13,12 @@ namespace CountriesRecommendation
             bool liveBySea;
             liveBySea = answer == "да";
 
+            Console.WriteLine("Сколько вы хотите зарабатывать?");
+            int UserSalary = Convert.ToInt32(Console.ReadLine());
+
             UserPreferences preferences = new UserPreferences();
-            preferences.SetLiveBySea(liveBySea);
+            preferences.SetLiveBySea(liveBySea); //передаем в UserPreferences информацию о море
+            preferences.SetMinSalary(UserSalary); //передаем в UserPreferences информацию о мин. ЗП
 
             //создаем зубчатый массив, типа str и записываем в него результат выполнения 
             //CsvReader(он возвращает зубчатый массив из Страны в первом массиве и информации о ней внутри этого массива)
@@ -22,7 +26,7 @@ namespace CountriesRecommendation
             
             //создаем массив countries типа Country(созданного мной класса Country) и задаем ему длинну равную размеру массива countriesInfo
             Country[] countries = new Country[countriesInfo.Length];
-
+            
             for (int i = 0; i < countriesInfo.Length; i++) {
                 
                 //создаем строковый массив countryInfo и передаем в него информацию о стране из countriesInfo

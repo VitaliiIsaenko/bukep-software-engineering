@@ -10,11 +10,11 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/CountriesRecommendation/bin/Debug/netcoreapp3.1/CountriesRecommendation.dll",
+            "program": "${workspaceFolder}/Lab_3/CountriesRecommendation/CountriesRecommendation/bin/Debug/netcoreapp3.1/CountriesRecommendation.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/CountriesRecommendation",
+            "cwd": "${workspaceFolder}/Lab_3/CountriesRecommendation/CountriesRecommendation",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
-            "console": "internalConsole",
+            "console": "integratedTerminal",
             "stopAtEntry": false
         },
         {

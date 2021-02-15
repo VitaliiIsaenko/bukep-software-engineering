@@ -7,8 +7,8 @@ public class Country {
         HasSea = CountryHasSea;
     }
 
-    private long Populations; 
-    private int AverageSalary;
+    public long Populations; 
+    public int AverageSalary;
     public bool HasSea {get;}
     public string Name {get;}
 }

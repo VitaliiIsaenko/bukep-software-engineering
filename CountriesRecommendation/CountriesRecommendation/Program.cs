@@ -13,9 +13,12 @@ namespace CountriesRecommendation
 
             liveBySea = answer == "да";
 
-
             UserPreferences preferences = new UserPreferences();
             preferences.SetLiveBySea(liveBySea);
+
+            Console.WriteLine("Сколько вы хотите зарабатывать?");
+            preferences.SetMinSalary(int.Parse(Console.ReadLine()));
+
 
 
             string[][] countriesInfo = CsvReader.Read("Isaenko.csv");
@@ -26,13 +29,26 @@ namespace CountriesRecommendation
                 countries[i] = new Country(countryInfo[0], int.Parse(countryInfo[1]), long.Parse(countryInfo[2]), countryInfo[3] == "да");
             }
 
-foreach(Country country in countries) {
-    if (preferences.Satisfied(country)) {
-        Console.WriteLine(country.Name);
-        return;
-    }
-}
-Console.WriteLine("Извините, мы не смогли подобрать страну с такими параметрами");
+
+
+
+
+
+
+
+
+
+
+
+            foreach (Country country in countries)
+            {
+                if (preferences.Satisfied(country))
+                {
+                    Console.WriteLine(country.Name);
+                    return;
+                }
+            }
+            Console.WriteLine("Извините, мы не смогли подобрать страну с такими параметрами");
         }
     }
 }

@@ -1,14 +1,13 @@
 public class Country {
     public string Name {get;}
-    private int averageSalary;
+    public int AverageSalary {get;}
     private long population;
     public bool HasSea {get;}
     
     public Country(string countryName, int countryAverageSalary, long countryPopulation, bool countryHasSea) {
         Name = countryName;
-        averageSalary = countryAverageSalary;
+        AverageSalary = countryAverageSalary;
         population = countryPopulation;
         HasSea = countryHasSea;
     }
-
 }

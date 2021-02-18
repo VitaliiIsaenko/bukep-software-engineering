@@ -18,9 +18,7 @@ namespace CountriesRecommendation
 
             Console.WriteLine("Сколько вы хотите зарабатывать?");
             preferences.SetMinSalary(int.Parse(Console.ReadLine()));
-
-
-
+            
             string[][] countriesInfo = CsvReader.Read("Isaenko.csv");
             Country[] countries = new Country[countriesInfo.Length];
             for (int i = 0; i < countriesInfo.Length; i++)
@@ -28,17 +26,6 @@ namespace CountriesRecommendation
                 string[] countryInfo = countriesInfo[i];
                 countries[i] = new Country(countryInfo[0], int.Parse(countryInfo[1]), long.Parse(countryInfo[2]), countryInfo[3] == "да");
             }
-
-
-
-
-
-
-
-
-
-
-
 
             foreach (Country country in countries)
             {

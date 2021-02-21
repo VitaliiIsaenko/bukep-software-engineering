@@ -16,13 +16,17 @@ namespace CountriesRecommendation
             Console.WriteLine("Сколько вы хотите зарабатывать?");
             int UserSalary = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("В какой по размеру стране вы хотите жить?\n Введите ответ: 'большая', 'средняя', 'малая'.");
+            CountrySize SizeCountry = CountrySizeParse.ParseCountrySize(Console.ReadLine());
+
             UserPreferences preferences = new UserPreferences();
             preferences.SetLiveBySea(liveBySea); //передаем в UserPreferences информацию о море
             preferences.SetMinSalary(UserSalary); //передаем в UserPreferences информацию о мин. ЗП
+            preferences.SetSize(SizeCountry); //передаем в UserPreferences информацию о размере страны
 
             //создаем зубчатый массив, типа str и записываем в него результат выполнения 
             //CsvReader(он возвращает зубчатый массив из Страны в первом массиве и информации о ней внутри этого массива)
-            string[][] countriesInfo = CsvReader.Read("Krekshin.csv");
+            string[][] countriesInfo = CsvReader.Read(new string[] {"Krekshin.csv", "Isaenko.csv"});
             
             //создаем массив countries типа Country(созданного мной класса Country) и задаем ему длинну равную размеру массива countriesInfo
             Country[] countries = new Country[countriesInfo.Length];

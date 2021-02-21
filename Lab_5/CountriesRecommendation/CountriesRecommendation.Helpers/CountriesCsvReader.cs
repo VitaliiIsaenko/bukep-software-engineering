@@ -17,10 +17,24 @@ namespace CountriesRecommendation.Helpers
             for (int i = 0; i < lines.Length; i++)
             {
                 var fields = lines[i].Split(",");
-                // var country = new Country(fields[0], long.Parse(fields[1]), int.Parse(fields[2]), fields[3] == "да");
                 rows[i] = fields;
             }
             return rows;
+        }
+    
+        // Перегрузка метода Read()
+        // принимает массив названий файлов
+        // возвращает все строки из всех файлов
+        public static string[][] Read(string[] fileNames)
+        {
+            // Здесь мы используем структуру данных список, для создания списка списков 
+            List<List<string>> allRows = new List<List<string>>();
+            foreach(var fileName in fileNames) {
+                foreach(var row in CsvReader.Read(fileName)) {
+                    allRows.Add(new List<string>(row));
+                }
+            }
+            return allRows.Select(ar => ar.ToArray()).ToArray();
         }
     }
 }

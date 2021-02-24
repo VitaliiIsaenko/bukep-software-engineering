@@ -1,9 +1,9 @@
 namespace CountriesRecommendation
 {
-    public class CountrySizeParse
+    public static class CountrySizeParser
     {
         public static CountrySize ParseCountrySize(string size) {
-            switch (size) {
+            switch (size.ToLower()) {
                 case "большая":
                     return CountrySize.Big;
                 

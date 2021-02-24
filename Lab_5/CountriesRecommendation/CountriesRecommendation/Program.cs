@@ -16,8 +16,8 @@ namespace CountriesRecommendation
             Console.WriteLine("Сколько вы хотите зарабатывать?");
             int UserSalary = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("В какой по размеру стране вы хотите жить?\n Введите ответ: 'большая', 'средняя', 'малая'.");
-            CountrySize SizeCountry = CountrySizeParse.ParseCountrySize(Console.ReadLine());
+            Console.WriteLine("В какой по размеру стране вы хотите жить?\nВведите ответ: 'большая', 'средняя', 'малая'.");
+            CountrySize SizeCountry = CountrySizeParser.ParseCountrySize(Console.ReadLine());
 
             UserPreferences preferences = new UserPreferences();
             preferences.SetLiveBySea(liveBySea); //передаем в UserPreferences информацию о море

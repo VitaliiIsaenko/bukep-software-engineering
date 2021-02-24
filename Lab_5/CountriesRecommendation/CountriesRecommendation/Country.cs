@@ -2,7 +2,7 @@ namespace CountriesRecommendation {
     public class Country {
         public string Name {get;}
         public int AverageSalary {get;}
-        private long population {get;} 
+        private long population;
         public bool HasSea {get;}
 
         public Country(string countryName, long countryPopulation, int countryAverageSalary, bool countryHasSea) {
@@ -13,11 +13,11 @@ namespace CountriesRecommendation {
         }
 
         public CountrySize GetSize() {
-            if (this.population <= 40_000_000) {
+            if (population <= 40_000_000) {
                 return CountrySize.Small;
             }
 
-            else if (40_000_000 < this.population && this.population < 100_000_000) {
+            else if (40_000_000 < population && population < 100_000_000) {
                 return CountrySize.Medium;
             }
 

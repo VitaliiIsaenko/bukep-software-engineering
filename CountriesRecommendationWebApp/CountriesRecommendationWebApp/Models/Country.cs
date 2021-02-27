@@ -9,8 +9,6 @@ namespace CountriesRecommendationWebApp.Models
         public long Population {get;}
         public bool HasSea { get; }
 
-        public Country(){}
-
         public Country(string countryName, long countryPopulation, int countryAverageSalary, bool countryHasSea)
         {
             Name = countryName;

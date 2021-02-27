@@ -7,3 +7,12 @@
 /home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation.Helpers/obj/Debug/netcoreapp3.1/CountriesRecommendation.Helpers.csproj.CoreCompileInputs.cache
 /home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation.Helpers/obj/Debug/netcoreapp3.1/CountriesRecommendation.Helpers.dll
 /home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation.Helpers/obj/Debug/netcoreapp3.1/CountriesRecommendation.Helpers.pdb
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\bin\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.deps.json
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\bin\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.dll
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\bin\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.pdb
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.csprojAssemblyReference.cache
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.AssemblyInfoInputs.cache
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.AssemblyInfo.cs
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.dll
+C:\Users\dtrsa\bukep-software-engineering\CountriesRecommendation\CountriesRecommendation.Helpers\obj\Debug\netcoreapp3.1\CountriesRecommendation.Helpers.pdb

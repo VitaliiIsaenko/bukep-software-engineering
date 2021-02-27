@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TzV+OQHtn/Pq7oBI60zQBOi35YoAxoIcm701NQJvd695yOYZNvWjh1sedSBSQrOwo1HCNws1hSJwMMrK3GP7WA==",
+  "dgSpecHash": "N5zVC6rSmsftpifB00KERJLCsbemPNxLr16Vllf7DAyjyEizUm+eS0+LHJOqlcc+kvD0LD9CrlvJHcm0q+Ev2Q==",
   "success": true,
-  "projectFilePath": "/home/vitalii/Documents/Repos/bukep-software-engineering/CountriesRecommendation/CountriesRecommendation/CountriesRecommendation.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\dtrsa\\bukep-software-engineering\\CountriesRecommendation\\CountriesRecommendation\\CountriesRecommendation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dtrsa\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\dtrsa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\dtrsa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\dtrsa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+  ],
   "logs": []
 }

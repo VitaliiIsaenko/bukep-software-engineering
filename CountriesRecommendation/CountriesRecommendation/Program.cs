@@ -1,4 +1,5 @@
 ﻿using System;
+using CountriesRecommendation.Helpers;
 
 namespace CountriesRecommendation
 {
@@ -10,16 +11,29 @@ namespace CountriesRecommendation
             string answer = Console.ReadLine();
             bool liveBySea;
 
-            if (answer == "да")
-            {
-                liveBySea = true;
-            }
-            else
-            {
-                liveBySea = false;
-            }
+            liveBySea = answer == "yes";
 
             Console.WriteLine(liveBySea);
+
+            Country[] countries = CountriesCsvReader.ReadCountries("Samokhlebov.csv");
+
+            if (liveBySea == true)
+            {
+                if (countries[0].HasSea)
+                {
+                    Console.WriteLine(countries[0].ToString());
+                }
+
+                else
+                {
+                    Console.WriteLine(countries[1].ToString());
+                }
+            }
+
+            else
+            {
+                Console.WriteLine(countries[1].ToString());
+            }
         }
     }
 }

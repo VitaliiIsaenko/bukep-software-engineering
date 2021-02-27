@@ -22,7 +22,6 @@ namespace CountriesRecommendation
             Console.WriteLine("Какая страна должна быть по размеру?");
             preferences.SetSize(ParseCountrySize(Console.ReadLine()));
             
-            //todo: didn't explain it yet - change in the end of the lab! (explaining overloading)
             string[][] countriesInfo = CsvReader.Read(new string[]{"Isaenko.csv","Krekshin.csv"});
             Country[] countries = new Country[countriesInfo.Length];
             for (int i = 0; i < countriesInfo.Length; i++)

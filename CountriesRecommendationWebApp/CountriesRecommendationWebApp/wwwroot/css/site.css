@@ -1,0 +1,26 @@
+﻿.page {
+    background-color: #434343;
+    height: 100vh;
+    font-family: 'sans-serif';
+    color: #fff;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+}
+
+.header {
+    padding-bottom: 40px;
+}
+
+.subheading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.logo {
+    object-fit: contain;
+}

@@ -13,9 +13,6 @@ public class Student
         this.age = age;
     }
 
-
-
-
     public static void Run() {
         this
     }

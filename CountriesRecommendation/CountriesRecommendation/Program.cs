@@ -9,25 +9,50 @@ namespace CountriesRecommendation
         {
             Console.WriteLine("Хотите ли вы жить у моря?");
             string answer = Console.ReadLine();
-            bool liveBySea = answer == "да";
+            bool liveBySea;
 
-            Country[] countries = CountriesCsvReader.ReadCountries("Shepelev.csv");
-            //Если пользователь предпочитаеть жить у моря
-            if (liveBySea == true) {
-                //если первая страна в списке имеет выход к морю 
-                if(countries[0].HasSea){
-                    Console.WriteLine (countries[0].Name);
-                } else
-                //если вторая страна в списке имеет выход к морю
-                if (countries[1].HasSea) {
-                    Console.WriteLine (countries[1].Name);
+            liveBySea = answer == "да";
+
+            UserPreferences preferences = new UserPreferences();
+            preferences.SetLiveBySea(liveBySea);
+
+            Console.WriteLine("Сколько вы хотите зарабатывать?");
+            preferences.SetMinSalary(int.Parse(Console.ReadLine()));
+
+            Console.WriteLine("Какая страна должна быть по размеру?");
+            preferences.SetSize(ParseCountrySize(Console.ReadLine()));
+            
+            string[][] countriesInfo = CsvReader.Read(new string[]{"Isaenko.csv","Shepelev.csv"});
+            Country[] countries = new Country[countriesInfo.Length];
+            for (int i = 0; i < countriesInfo.Length; i++)
+            {
+                string[] countryInfo = countriesInfo[i];
+                countries[i] = new Country(countryInfo[0], long.Parse(countryInfo[1]), int.Parse(countryInfo[2]), countryInfo[3] == "да");
+            }
+
+            foreach (Country country in countries)
+            {
+                if (preferences.Satisfied(country))
+                {
+                    Console.WriteLine(country.Name);
+                    return;
                 }
-            } 
-            //В противном случае (иначе) выведите любую страну в консоль
-            else {
-            Console.WriteLine (countries[1].Name);
-                
+            }
+            Console.WriteLine("Извините, мы не смогли подобрать страну с такими параметрами");
+        }
+
+        private static CountrySize ParseCountrySize(string countrySize) {
+            switch (countrySize)
+            {
+                case "большая":
+                    return CountrySize.Big;
+                case "средняя":
+                    return CountrySize.Medium;
+                case "малая":
+                    return CountrySize.Small;
+                default:
+                    throw new Exception($"Нет значения {countrySize} для размера страны");
             }
         }
     }
-}                                                                                                                                                                                                   
+}

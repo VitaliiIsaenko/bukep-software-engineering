@@ -1,4 +1,5 @@
 ﻿using System;
+using CountriesRecommendation.Helpers;
 
 namespace CountriesRecommendation
 {
@@ -10,16 +11,24 @@ namespace CountriesRecommendation
             string answer = Console.ReadLine();
             bool liveBySea;
 
-            if (answer == "да")
+            liveBySea = answer == "да";
+
+            Country[] countries = CountriesCsvReader.ReadCountries("Homchenko.csv");
+
+            if (liveBySea)
             {
-                liveBySea = true;
+                if (countries[0].HasSea){
+                
+                    Console.WriteLine(countries[0]);
+                }
+                else {
+                    Console.WriteLine(countries[1]);
+                }
             }
             else
             {
-                liveBySea = false;
+                Console.WriteLine(countries[0]);
             }
-
-            Console.WriteLine(liveBySea);
         }
     }
 }

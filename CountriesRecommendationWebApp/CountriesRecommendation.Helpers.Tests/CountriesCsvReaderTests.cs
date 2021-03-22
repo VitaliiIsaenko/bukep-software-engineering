@@ -11,8 +11,6 @@ namespace CountriesRecommendation.Helpers.Tests
             var onlyForTest = "../../../../countries";
             var countries = CsvReader.Read($"{onlyForTest}/Isaenko.csv");
 
-            Assert.Equal(2, countries.Length);
-
             Assert.Equal("Венгрия", countries[0][0]);
             Assert.Equal(9_769_526, long.Parse(countries[0][1]));
             Assert.Equal(437, int.Parse(countries[0][2]));

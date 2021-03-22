@@ -4,27 +4,22 @@ using System.Linq;
 
 namespace CountriesRecommendation.Helpers
 {
-    public class CountriesCsvReader
+    public class CsvReader
     {
-        public static Country[] ReadCountries(string fileName)
+        public static string[][] Read(string fileName)
         {
             var curr = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
             var filePath = $"{curr}/countries/{fileName}";
-
-            Country[] countries = new Country[10];
-
+            
             var lines = File.ReadAllLines(filePath).Skip(1).ToArray();
-
-            for(int i = 0; i < lines.Length; i++) {
-                
+            string[][] rows = new string[lines.Length][];
+            for (int i = 0; i < lines.Length; i++)
+            {
                 var fields = lines[i].Split(",");
-
-                var country = new Country(fields[0], long.Parse(fields[1]), int.Parse(fields[2]), fields[3] == "да");
-
-                countries[i] = country;
-
+                // var country = new Country(fields[0], long.Parse(fields[1]), int.Parse(fields[2]), fields[3] == "да");
+                rows[i] = fields;
             }
-            return countries;
+            return rows;
         }
     }
 }

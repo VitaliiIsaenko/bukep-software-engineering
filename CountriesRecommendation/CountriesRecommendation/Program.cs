@@ -22,7 +22,7 @@ namespace CountriesRecommendation
             Console.WriteLine("Какая страна должна быть по размеру?");
             preferences.SetSize(ParseCountrySize(Console.ReadLine()));
             
-            string[][] countriesInfo = CsvReader.Read(new string[]{"Danilov.csv","Isaenko.csv"});
+            string[][] countriesInfo = CsvReader.Read(new string[]{"Isaenko.csv","Danilov.csv"});
             Country[] countries = new Country[countriesInfo.Length];
             for (int i = 0; i < countriesInfo.Length; i++)
             {

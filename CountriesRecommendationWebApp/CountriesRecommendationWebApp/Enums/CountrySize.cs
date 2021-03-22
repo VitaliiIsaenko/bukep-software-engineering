@@ -1,12 +1,14 @@
-namespace CountriesRecommendation
+namespace CountriesRecommendationWebApp.Enums
 {
     public enum CountrySize
     {
         // Большая
-        Big,
+        Big = 1,
+
         // Средняя
-        Medium,
+        Medium = 2,
+
         // Малая
-        Small
+        Small =3
     }
 }

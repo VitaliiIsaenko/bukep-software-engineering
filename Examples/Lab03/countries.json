@@ -1,0 +1,13 @@
+[{
+        "name": "Венгрия",
+        "population": 9769526,
+        "averageSalary": 437,
+        "hasSea": false
+    },
+    {
+        "name": "Индия",
+        "population": 1380230000,
+        "averageSalary": 88,
+        "hasSea": true
+    }
+]

@@ -13,27 +13,26 @@ namespace CountriesRecommendation
 
             liveBySea = answer == "yes";
 
-            Console.WriteLine(liveBySea);
+            UserPreferences preferences = new UserPreferences();
+            preferences.SetLiveBySea(liveBySea);
 
-            Country[] countries = CountriesCsvReader.ReadCountries("Samokhlebov.csv");
-
-            if (liveBySea == true)
+            string[][] countriesInfo = CsvReader.Read("Samokhlebov.csv");
+            Country[] countries = new Country[countriesInfo.Length];
+            for(int i = 0; i < countriesInfo.Length; i++)
             {
-                if (countries[0].HasSea)
-                {
-                    Console.WriteLine(countries[0].ToString());
-                }
-
-                else
-                {
-                    Console.WriteLine(countries[1].ToString());
-                }
+                string[] countryInfo = countriesInfo[i];
+                countries[i] = new Country(countryInfo[0], int.Parse(countryInfo[1]), long.Parse(countryInfo[2]), countryInfo[3] == "да");
             }
 
-            else
+            foreach(Country country in countries)
             {
-                Console.WriteLine(countries[1].ToString());
+                if (preferences.Statisfied(country))
+                {
+                    Console.WriteLine(country.Name);
+                    return;
+                }
             }
+            Console.WriteLine("Извините, мы не смогли подобрать страну с такими параметрами");
         }
     }
 }

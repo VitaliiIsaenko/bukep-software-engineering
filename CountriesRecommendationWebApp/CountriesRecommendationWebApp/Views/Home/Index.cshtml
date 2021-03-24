@@ -1,1 +1,29 @@
-﻿
+﻿<form action="#" class="text-center mx-auto">
+    <h2>Введите свои предпочтения</h2>
+    <div class="form-group">
+        <label for="salary">Желаемая зарплата в $</label>
+        <input type="number" id="salary" class="form-control salary mx-auto">
+    </div>
+
+    <fieldset>
+        <legend class="size-legend">Страна должна быть:</legend>
+        <div class="form-checked ">
+            <input type="radio" id="big" name="size" checked class="form-check-input">
+            <label for="big">Большая</label>
+        </div>
+        <div class="form-checked">
+            <input type="radio" id="medium" name="size" class="form-check-input">
+            <label for="medium">Средняя</label>
+        </div>
+        <div class="form-checked">
+            <input type="radio" id="small" name="size" class="form-check-input">
+            <label for="small">Маленькая</label>
+        </div>
+    </fieldset>
+    <div class="form-checked">
+        <input type="checkbox" id="live-by-sea" class="form-check-input">
+        <label for="live-by-sea">Хочу жить у моря!</label>
+    </div>
+
+    <input type="submit" value="Найти!" class="btn btn-success btn-find">
+</form>

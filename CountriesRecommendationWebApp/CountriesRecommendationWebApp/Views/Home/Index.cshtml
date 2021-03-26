@@ -1,8 +1,8 @@
-﻿<form action="#" class="text-center mx-auto box">
+﻿<form action="~/Home/CountryInfo" method="POST" class="text-center mx-auto box">
     <h2>Введите свои предпочтения</h2>
     <div class="form-group">
         <label for="salary" class="form-check-label">Желаемая зарплата в $</label>
-        <input id="salary" type="number" class="form-control salary mx-auto">
+        <input id="salary" type="number" class="form-control salary mx-auto" name="minSalary">
     </div>
 
     <fieldset>
@@ -10,20 +10,20 @@
         
         <div class="form-check">
             <label for="big" class="form-check-label">Большая</label>
-            <input type="radio" id="big" name="size" checked>
+            <input type="radio" id="Big" name="size" checked value="Big">
         </div>
 
         <div class="form-check">
             <label for="medium" class="form-check-label">Средняя</label>
-            <input type="radio" id="medium" name="size">
+            <input type="radio" id="Medium" name="size" value="Medium">
         </div>
 
         <div class="form-check">
             <label for="small" class="form-check-label">Маленькая</label>
-            <input type="radio" id="small" name="size">
+            <input type="radio" id="Small" name="size" value="Small">
         </div>
     </fieldset>
-    <input type="checkbox" id="checkbox">
+    <input type="checkbox" id="checkbox" name="liveBySea" value="True">
     <label for="checkbox" class="form-check-label">Хочу жить у моря!</label>
 
     <div>

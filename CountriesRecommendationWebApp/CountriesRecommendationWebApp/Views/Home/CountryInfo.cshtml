@@ -1,13 +1,18 @@
-<a href="~/Home/Index" class="nav-link">Изменить параметры поиска</a>
-<section class="box mx-auto text-center">
-    <h2>Индия</h2>
+@model Country
+
+@if (@Model == null){
+    <p>Извините, мы не смогли подобрать страну с такими параметрами</p>
+} else {
+    <a href="~/Home/Index" class="nav-link">Изменить параметры поиска</a>
+    <section class="box mx-auto text-center">
+    <h2>@Model.Name</h2>
     <ul class="list">
         <li>
-            <p>Население: 1380230000</p>
+            <p>@Model.Population</p>
         </li>
         <li>
-            <p>Средняя зарплата: 88 $</p>
+            <p>@Model.AverageSalary</p>
         </li>
     </ul>
-</section>
-
+    </section>
+}

@@ -11,10 +11,13 @@ namespace CountriesRecommendation
             string answer = Console.ReadLine();
             bool liveBySea;
 
-            liveBySea = answer == "yes";
+            liveBySea = answer == "Да";
 
             UserPreferences preferences = new UserPreferences();
             preferences.SetLiveBySea(liveBySea);
+
+            Console.WriteLine("Сколько вы хотите зарабатывать?");
+            preferences.SetMinSalary(int.Parse(Console.ReadLine()));
 
             string[][] countriesInfo = CsvReader.Read("Samokhlebov.csv");
             Country[] countries = new Country[countriesInfo.Length];
@@ -33,6 +36,7 @@ namespace CountriesRecommendation
                 }
             }
             Console.WriteLine("Извините, мы не смогли подобрать страну с такими параметрами");
+        
         }
     }
 }

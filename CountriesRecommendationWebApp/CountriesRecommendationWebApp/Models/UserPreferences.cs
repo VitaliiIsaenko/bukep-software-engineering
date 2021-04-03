@@ -45,7 +45,7 @@ namespace CountriesRecommendationWebApp.Models
             this.size = size;
         }
 
-        private bool LiveBySeaSatisfied(Country country)
+        public bool LiveBySeaSatisfied(Country country)
         {
             if (liveBySea)
             {
@@ -64,7 +64,7 @@ namespace CountriesRecommendationWebApp.Models
             }
         }
 
-        private bool SizeSatisfied(Country country)
+        public bool SizeSatisfied(Country country)
         {
             if (size == country.GetSize())
             {
@@ -76,7 +76,7 @@ namespace CountriesRecommendationWebApp.Models
             }
         }
 
-        private bool MinSalarySatisfied(Country country)
+        public bool MinSalarySatisfied(Country country)
         {
             if (country.AverageSalary >= minSalary)
             {

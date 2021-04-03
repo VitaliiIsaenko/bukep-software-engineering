@@ -1,27 +1,27 @@
-﻿<form action="#" class="text-center mx-auto">
+﻿<form action="~/Home/CountryInfo" class="text-center mx-auto" method="post">
     <h2>Введите свои предпочтения</h2>
     <div class="form-group">
         <label for="salary">Желаемая зарплата в $</label>
-        <input type="number" id="salary" class="form-control salary mx-auto">
+        <input type="number" id="salary" class="form-control salary mx-auto" name="minSalary">
     </div>
 
     <fieldset>
         <legend class="size-legend">Страна должна быть:</legend>
         <div class="form-checked ">
-            <input type="radio" id="big" name="size" checked class="form-check-input">
-            <label for="big">Большая</label>
+            <input type="radio" id="Big" name="size" checked class="form-check-input" value="Big">
+            <label for="Big">Большая</label>
         </div>
         <div class="form-checked">
-            <input type="radio" id="medium" name="size" class="form-check-input">
-            <label for="medium">Средняя</label>
+            <input type="radio" id="Medium" name="size" class="form-check-input" value="Medium">
+            <label for="Medium">Средняя</label>
         </div>
         <div class="form-checked">
-            <input type="radio" id="small" name="size" class="form-check-input">
-            <label for="small">Маленькая</label>
+            <input type="radio" id="Small" name="size" class="form-check-input" value="Small">
+            <label for="Small">Маленькая</label>
         </div>
     </fieldset>
     <div class="form-checked">
-        <input type="checkbox" id="live-by-sea" class="form-check-input">
+        <input type="checkbox" id="live-by-sea" class="form-check-input" name="liveBySea" value="True">
         <label for="live-by-sea">Хочу жить у моря!</label>
     </div>
 

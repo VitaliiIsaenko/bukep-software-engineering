@@ -1,0 +1,28 @@
+﻿.list {
+    list-style: none;
+    padding-left: 0;
+}
+.salary {
+    max-width: 120px;
+}
+.size-legend {
+    font-size: 16px;
+}
+.btn-find {
+    margin: 10px 0 0 0;
+}
+.page {
+    background-color: #434343;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Arial';
+    padding-top: 30px;
+}
+.box {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 400px;
+}
